@@ -7,7 +7,8 @@ from django.views.generic import UpdateView
 from rest_framework.pagination import PageNumberPagination
 from rest_framework.viewsets import ModelViewSet
 
-from ads.serializers import *
+from ads.models import Ad
+from ads.serializers import AdSerializer, AdDetailSerializer, AdListSerializer
 
 
 class AdPagination(PageNumberPagination):

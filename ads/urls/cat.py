@@ -1,6 +1,7 @@
 from django.urls import path
 
-from ads.viewsapp.cat import *
+from ads.viewsapp.cat import CategoryListView, CategoryDetailView, CategoryUpdateView, CategoryDeleteView, \
+    CategoryCreateView
 
 urlpatterns = [
     path('', CategoryListView.as_view()),

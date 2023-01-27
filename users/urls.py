@@ -1,5 +1,4 @@
 from django.urls import path
-from rest_framework.routers import SimpleRouter
 
 from users.views import UserListView, UserDetailView, UserCreateView, UserUpdateView, UserDeleteView
 

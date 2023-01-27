@@ -18,7 +18,7 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 
-from ads.views import *
+from ads.views import root
 from users.locations import router
 
 urlpatterns = [
