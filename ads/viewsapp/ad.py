@@ -9,8 +9,10 @@ from rest_framework.viewsets import ModelViewSet
 
 from ads.serializers import *
 
+
 class AdPagination(PageNumberPagination):
     page_size = 5
+
 
 class AdViewSet(ModelViewSet):
     queryset = Ad.objects.order_by('-price')

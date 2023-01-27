@@ -18,10 +18,8 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 
-from ads.Views.ad import *
-from ads.Views.cat import *
-
 from ads.views import *
+from users.locations import router
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -29,7 +27,9 @@ urlpatterns = [
 
     path('cat/', include("ads.urls.cat")),
     path('ad/', include("ads.urls.ad")),
-    path('user/', include("users.urls"))
+    path('user/', include("users.urls")),
+    path('', include(router.urls)),
+
 
 ]
 
